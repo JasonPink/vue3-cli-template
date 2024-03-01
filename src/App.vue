@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/404">About</router-link>
   </div>
   <router-view />
 </template>
@@ -17,6 +17,8 @@
 
 #nav {
   padding: 30px;
+  background: url($src + "/id/729/200/300.jpg?hmac=VbcZBxFYzQK1ro1MTLLmwHNQ0kuIJSagOeue4JMymUY")
+    no-repeat;
 
   a {
     font-weight: bold;
