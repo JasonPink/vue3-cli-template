@@ -1,15 +1,16 @@
-const path = require("path");
+/* eslint-disable no-unused-vars */
+const path = require('path');
 
-const resolve = (dir) => path.join(__dirname, dir);
-const IS_PROD = ["production", "prod"].includes(process.env.NODE_ENV);
+const resolve = dir => path.join(__dirname, dir);
+const IS_PROD = ['production', 'prod'].includes(process.env.NODE_ENV);
 
 module.exports = {
   configureWebpack: {
     resolve: {
       alias: {
-        "@": path.resolve(__dirname, "src"),
-      },
-    },
+        '@': path.resolve(__dirname, 'src')
+      }
+    }
   },
   css: {
     loaderOptions: {
@@ -18,8 +19,8 @@ module.exports = {
         prependData: `
         @import "@/styles/variables.scss";
         $src: "${process.env.VUE_APP_OSS_SRC}";
-        `,
-      },
-    },
-  },
+        `
+      }
+    }
+  }
 };

@@ -1,8 +1,8 @@
-import NProgress from "nprogress";
-import { createRouter, createWebHistory } from "vue-router";
-import routes from "./routes";
+import NProgress from 'nprogress';
+import { createRouter, createWebHistory } from 'vue-router';
+import routes from './routes';
 
-import "nprogress/nprogress.css";
+import 'nprogress/nprogress.css';
 NProgress.configure({ showSpinner: false });
 
 const router = createRouter({
@@ -10,7 +10,7 @@ const router = createRouter({
   routes,
   scrollBehavior(to, from, pos) {
     return pos || { x: 0, y: 0 };
-  },
+  }
 });
 
 router.beforeEach(async (to, _, next) => {
