@@ -52,7 +52,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,ts,css,vue,tsx,jsx}": [
-      "eslint",
+      "lint",
       "git add"
     ]
   },

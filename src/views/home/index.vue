@@ -4,6 +4,7 @@
 <script setup>
   const a = 1;
   const b = 'sss';
+  console.log(22);
   const obj = { a: 1, b: 2, c: 4 };
 </script>
 <style scoped lang="scss"></style>
