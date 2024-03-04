@@ -17,9 +17,9 @@
 
 #nav {
   padding: 30px;
-  background: url($src + "/id/729/200/300.jpg?hmac=VbcZBxFYzQK1ro1MTLLmwHNQ0kuIJSagOeue4JMymUY")
-    no-repeat;
-
+  // background: url($src + "/id/729/200/300.jpg?hmac=VbcZBxFYzQK1ro1MTLLmwHNQ0kuIJSagOeue4JMymUY")
+  //   no-repeat;
+  // background: url("~@/assets/logo.png") no-repeat center;
   a {
     font-weight: bold;
     color: #2c3e50;

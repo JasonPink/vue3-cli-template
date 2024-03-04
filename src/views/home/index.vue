@@ -1,9 +1,9 @@
 <template>
-  <div>home</div>
+	<div>home</div>
 </template>
-<script setup></script>
-<style scoped lang="scss">
-div {
-  background: $primary-color;
-}
-</style>
+<script setup>
+	const a = 1;
+	const b = 'sss';
+	const obj = { a: 1, b: 2, c: 4 };
+</script>
+<style scoped lang="scss"></style>
