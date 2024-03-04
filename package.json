@@ -10,8 +10,8 @@
     "commit": "git-cz",
     "release": "standard-version",
     "release:first": "standard-version -r 1.0.0",
-    "lint-staged":"lint-staged",
-    "prepare": "husky install"
+    "lint-staged": "lint-staged",
+    "prepare": "husky"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -49,15 +49,9 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "src/**/*.{js,ts,css,vue,jsx}": [
-      "npm run lint",
+      "eslint --cache --fix",
       "git add"
     ]
   },
