@@ -5,6 +5,13 @@ const resolve = dir => path.join(__dirname, dir);
 const IS_PROD = ['production', 'prod'].includes(process.env.NODE_ENV);
 
 module.exports = {
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, 'src')
+      }
+    }
+  },
   chainWebpack: config => {
     const svgRule = config.module.rule('svg');
     svgRule.uses.clear();
@@ -19,13 +26,6 @@ module.exports = {
       .options({
         symbolId: 'icon-[name]'
       });
-  },
-  configureWebpack: {
-    resolve: {
-      alias: {
-        '@': path.resolve(__dirname, 'src')
-      }
-    }
   },
   css: {
     loaderOptions: {
